@@ -1,5 +1,6 @@
 #include "deleteNode.h"
 
+// find minimum number in sub-tree
 struct node* findMin(struct node* root){
   if(root == NULL){
     return root;
@@ -8,6 +9,7 @@ struct node* findMin(struct node* root){
   return root;
 }
 
+// delete a node from BST
 struct node* deleteNode(struct node* root,int data){
   if(root == NULL){
     return root;
