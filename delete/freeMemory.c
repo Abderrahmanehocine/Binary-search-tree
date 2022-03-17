@@ -1,5 +1,6 @@
 #include "freeMemory.h"
 
+// Delete the binary search tree
 void freeMemory(struct node* root){
   if(root == NULL){
     return;
