@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include "../node/node.h"
 
+// Function:
 void freeMemory(struct node* root);
 
 #endif
