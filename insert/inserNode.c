@@ -1,5 +1,6 @@
 #include "insertNode.h"
 
+// Create new node and insert data 
 struct node* NewNode(int data){
   struct node* node=(struct node*)malloc(sizeof(struct node));
   node->data=data;
@@ -7,6 +8,7 @@ struct node* NewNode(int data){
   return node;
 }
 
+// Manage node place in the binary search tree
 struct node* insert(struct node* root , int data){
   if(root == NULL){
     root=NewNode(data);
