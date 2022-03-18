@@ -1,5 +1,7 @@
 #include "freeMemory.h"
+extern void freeMemory(struct node* root);
 
+#ifdef FREEMEMORY_H
 // Delete the binary search tree
 void freeMemory(struct node* root){
   if(root == NULL){
@@ -9,3 +11,4 @@ void freeMemory(struct node* root){
   freeMemory(root->right);
   free(root);
 }
+#endif

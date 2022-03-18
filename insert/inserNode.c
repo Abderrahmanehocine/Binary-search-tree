@@ -1,5 +1,6 @@
 #include "insertNode.h"
 
+#ifdef INSERTNODE_H
 // Create new node and insert data 
 struct node* NewNode(int data){
   struct node* node=(struct node*)malloc(sizeof(struct node));
@@ -21,3 +22,5 @@ struct node* insert(struct node* root , int data){
   }
   return root;
 }
+
+ #endif
