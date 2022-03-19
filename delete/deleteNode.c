@@ -1,11 +1,7 @@
 #include "deleteNode.h"
 
-extern struct node* findMin(struct node* root);
-extern struct node* deleteNode(struct node* root,int data);
-
-#ifdef DELETENODE_H
 // find minimum number in sub-tree
-struct node* findMin(struct node* root){
+static struct node* findMin(struct node* root){
   if(root == NULL){
     return root;
   }
@@ -50,4 +46,3 @@ struct node* deleteNode(struct node* root,int data){
   }
   return root;
 }// end deleteNode()
-#endif

@@ -5,7 +5,6 @@
 #include "../node/node.h"
 
 // Functions:
-struct node* NewNode(int data);
 struct node* insert(struct node* root , int data);
 
 #endif
