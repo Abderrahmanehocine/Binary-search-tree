@@ -3,10 +3,10 @@ CC=g++
 CFLAGS=-c 
 
 all: main
-
+# make exe file 
 main: main.o insert/insertNode.o print/printData.o delete/deleteNode.o delete/freeMemory.o
 	$(CC) main.o insertNode.o printData.o deleteNode.o freeMemory.o -o main
-
+	
 main.o: main.c
 	$(CC) $(CFLAGS) main.c
 
