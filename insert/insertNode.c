@@ -13,7 +13,7 @@ struct node* insert(struct node* root , int data){
   if(root == NULL){
     root=NewNode(data);
   }
-  else if(data<=root->data){
+  else if(data<root->data){
     root->left=insert(root->left,data);
   }
   else{
